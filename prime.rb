@@ -2,7 +2,7 @@ require "pry"
 def prime?(integer)
   divisors = (2...integer).to_a
   dividends = []
-if integer <2
+if integer < 2
   return false
 elsif integer == 2
   return true
