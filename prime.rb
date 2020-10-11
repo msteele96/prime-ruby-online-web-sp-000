@@ -11,7 +11,6 @@ else
       dividends.push(integer % div)
     end
     dividends.any? {|rem| rem == 0 }
-    binding.pry
     if true
       return false
     else
