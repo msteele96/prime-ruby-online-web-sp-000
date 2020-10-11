@@ -1,10 +1,21 @@
+require "pry"
 def prime?(integer)
   divisors = (2...integer).to_a
-  divisors.each do |num|
-    if integer % num == 0
+  dividends = []
+if integer <2
+  return false
+elsif integer == 2
+  return true
+else
+    divisors.each do |div|
+      dividends.push(integer % div)
+    end
+    dividends.any? {|rem| rem == 0 }
+    binding.pry
+    if true
       return false
     else
       return true
     end
-  end
+end
 end
