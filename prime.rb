@@ -10,6 +10,7 @@ else
     divisors.each do |div|
       dividends.push(integer % div)
     end
+    binding.pry
     dividends.any? {|rem| rem == 0 }
     if true
       return false
